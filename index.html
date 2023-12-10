@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Sapper</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="game-field">
+            <div class="game-field-header">
+                <div class="level">
+                    <select>
+                        <option selected disabled>Level</option>
+                        <option value="junior">Easy</option>
+                        <option value="middle">Normal</option>
+                        <option value="senior">Hard</option>
+                        <option value="master">Suicide</option>
+                    </select>
+                </div>
+                <div class="score"></div>
+                <div class="records"><img src="./img/top.png" alt="Records"></div>
+                <div class="game-status"><button></button></div>
+                <div class="timer"></div>
+            </div>
+            <div class="game-field-body">
+            </div>
+        </div>
+        <div class="finish-victory">Congratulations!</div>
+        <div class="finish-fail">Ooops...</div>
+        <div class="records-table">
+            <div class="close-table">
+                <span>Close  <img src="./img/wrong.png" alt="Close"></span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Level</td>
+                        <td>Name</td>
+                        <td>Time</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>    
+    <script src="./js/script.min.js"></script>
+</body>
+</html>
